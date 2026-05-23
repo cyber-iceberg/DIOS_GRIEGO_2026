@@ -259,16 +259,22 @@ function DayView({ day }) {
           {day.focus.map((f, i) => <span key={i} className="dv-tag">{f}</span>)}
         </div>
       </div>
-      {day.blocks.map((b, i) => (
+   {day.blocks.map((b, i) => (
         <div key={i} className={`block ${b.rft ? 'rft' : ''}`}>
-          <div className="block-h">{b.t}</div>
+          <div className="block-h">
+            <span>{b.t}</span>
+            {b.rest && <span className="block-rest">⏱ {b.rest}</span>}
+          </div>
           {b.exs.map((e, j) => (
             <div key={j} className="ex">
               <div className="ex-main">
                 <div className="ex-n">{e.n}</div>
                 <div className="ex-d">{e.d}</div>
               </div>
-              <div className={`ex-s ${b.rft ? 'rft' : ''}`}>{e.s}</div>
+              <div className="ex-r-wrap">
+                <div className={`ex-s ${b.rft ? 'rft' : ''}`}>{e.s}</div>
+                {e.r && <div className="ex-rest">⏱ {e.r}</div>}
+              </div>
             </div>
           ))}
         </div>
