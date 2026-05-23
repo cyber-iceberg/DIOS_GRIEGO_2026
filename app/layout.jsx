@@ -1,3 +1,5 @@
+import './globals.css'
+
 export const metadata = {
   title: 'FORGE — Protocolo de entrenamiento',
   description: 'Forjado para no fallar ni una semana',
