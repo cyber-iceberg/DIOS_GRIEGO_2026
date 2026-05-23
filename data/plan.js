@@ -57,19 +57,19 @@ export const DAYS = [
     title: "Push — Pecho · Hombro · Tríceps · Cuello",
     focus: ["Hipertrofia", "70 min"],
     blocks: [
-      { t: "RFT — activación SNC", rft: true, exs: [
+      { t: "RFT — activación SNC", rft: true, rest: "fluido · sin pausa", exs: [
         { n: "Explosive push-up", d: "Bajada 2 seg, explosión máxima. Con tu nivel: palmada en el pecho.", s: "4×6" },
         { n: "Stationary Gorilla", d: "Posición baja, roca en todas direcciones. Abre cadera activa.", s: "3×30s" },
         { n: "Sit-Thrus", d: "Knee drive lateral desde crawl girando la cadera. Alterna sin parar.", s: "3×6/l" },
       ]},
-      { t: "Bloque principal", exs: [
-        { n: "Press inclinado mancuernas (30–35°)", d: "MEDIBLE. S1: 18kg/mano. +2kg cuando completes 4×10 a RIR 1. Meta agosto: 24–26kg.", s: "4×8–10" },
-        { n: "HSPU estricto contra pared", d: "Ya tienes 10 frescos. Con carga acumulada + pausa 2 seg desde S3. S5+: deficit con libros.", s: "4×8–10" },
+      { t: "Bloque principal", rest: "75–90s", exs: [
+        { n: "Press inclinado mancuernas (30–35°)", d: "MEDIBLE. S1: 18kg/mano. +2kg cuando completes 4×10 a RIR 1. Meta agosto: 24–26kg.", s: "4×8–10", r: "2 min" },
+        { n: "HSPU estricto contra pared", d: "Ya tienes 10 frescos. Con carga acumulada + pausa 2 seg desde S3. S5+: deficit con libros.", s: "4×8–10", r: "2 min" },
         { n: "Press hombro mancuernas sentado", d: "16kg S1. +1.25kg/semana. Codos algo delante — protege manguito.", s: "4×10–12" },
         { n: "Elevación lateral", d: "Pausa 1 seg arriba. Deltoide medio — anchura que estrecha la cintura.", s: "4×15" },
         { n: "Pull-over mancuerna", d: "Expansión costal + serrato. Fundamental para el pectus.", s: "3×12" },
       ]},
-      { t: "Cuello + tríceps", exs: [
+      { t: "Cuello + tríceps", rest: "45–60s", exs: [
         { n: "Flexión cuello con disco", d: "5kg S1. +1.25kg cuando hagas 3×15. Diámetro visible en 6 semanas.", s: "3×12–15" },
         { n: "Extensión tríceps overhead", d: "Cabeza larga. Fallo en última serie.", s: "4×12+f" },
         { n: "Flexiones diamante", d: "Manos bajo el esternón, codos atrás. Fallo última serie.", s: "3×máx" },
@@ -81,19 +81,19 @@ export const DAYS = [
     title: "Legs A — Peso muerto · Hang clean · Glúteo",
     focus: ["Pierna pesada", "70 min"],
     blocks: [
-      { t: "RFT — activación SNC", rft: true, exs: [
+      { t: "RFT — activación SNC", rft: true, rest: "fluido · sin pausa", exs: [
         { n: "Forward to Reverse Crawl", d: "Cuadrupedia, rodillas 2cm, cruzado. 4 adelante, 4 atrás. Caderas bajas.", s: "3×4" },
         { n: "3-Step Drop", d: "Sentadilla → explosión vertical → aterrizaje suave. El aterrizaje importa.", s: "3×5" },
         { n: "Hostage Squat", d: "Manos en nuca, talones planos. Pausa 1 seg. Mide movilidad de cadera.", s: "3×10" },
       ]},
-      { t: "Fuerza principal", exs: [
-        { n: "Peso muerto convencional", d: "MEDIBLE PRINCIPAL. S1: 62kg. Bajada 3 seg. +5kg cuando completes 4×5 RIR 2. Meta: 85kg.", s: "4×5" },
-        { n: "Hang clean barra", d: "MEDIBLE. S1: 50kg. Triple extensión, codos veloces al frente. +5kg/sem con técnica limpia.", s: "4×5" },
-        { n: "Sentadilla búlgara", d: "Pie trasero en banco, rodilla casi al suelo. S1: 16kg/mano. +2kg/sem.", s: "4×10/l" },
-        { n: "Hip thrust barra", d: "Barra sobre cadera con toalla. Aprieta glúteo 1 seg arriba. S1: 60kg. +5kg/sem.", s: "4×12" },
+      { t: "Fuerza principal", rest: "2–3 min", exs: [
+        { n: "Peso muerto convencional", d: "MEDIBLE PRINCIPAL. S1: 62kg. Bajada 3 seg. +5kg cuando completes 4×5 RIR 2. Meta: 85kg.", s: "4×5", r: "3 min" },
+        { n: "Hang clean barra", d: "MEDIBLE. S1: 50kg. Triple extensión, codos veloces al frente. +5kg/sem con técnica limpia.", s: "4×5", r: "3 min" },
+        { n: "Sentadilla búlgara", d: "Pie trasero en banco, rodilla casi al suelo. S1: 16kg/mano. +2kg/sem.", s: "4×10/l", r: "90s" },
+        { n: "Hip thrust barra", d: "Barra sobre cadera con toalla. Aprieta glúteo 1 seg arriba. S1: 60kg. +5kg/sem.", s: "4×12", r: "90s" },
       ]},
-      { t: "Gemelo gastrocnemio", exs: [
-        { n: "Elevación gemelo de pie (recto)", d: "3 seg excéntrico SIEMPRE. S3+: con mancuerna. Drop set última serie.", s: "4×20+d" },
+      { t: "Gemelo gastrocnemio", rest: "45–60s", exs: [
+        { n: "Elevación gemelo de pie (recto)", d: "3 seg excéntrico SIEMPRE. S3+: con mancuerna. Drop set última serie.", s: "4×20+d", r: "drop set sin pausa al final" },
         { n: "Calf jumps", d: "Rodilla recta, saltos solo de tobillo. 30 continuos. Fibras rápidas.", s: "3×30" },
       ]},
     ],
@@ -114,19 +114,19 @@ export const DAYS = [
     title: "Pull — Espalda ancha · Bíceps · Cuello",
     focus: ["Espalda + brazos", "70 min"],
     blocks: [
-      { t: "RFT — activación SNC", rft: true, exs: [
+      { t: "RFT — activación SNC", rft: true, rest: "fluido · sin pausa", exs: [
         { n: "Side Crawl", d: "Crawl lateral 4 pasos a cada lado. Cruzado siempre. Estabilizadores laterales.", s: "2×4" },
         { n: "Sit-Thrus", d: "Knee drive lateral con rotación completa de cadera.", s: "3×6/l" },
         { n: "Stationary Gorilla", d: "Posición baja, roca en todas direcciones. Activa hombros antes del remo.", s: "3×30s" },
       ]},
-      { t: "Bloque principal", exs: [
-        { n: "Remo Pendlay con barra", d: "MEDIBLE. S1: 62–65kg. Barra toca suelo entre reps. +2.5–5kg/sem.", s: "4×8" },
+      { t: "Bloque principal", rest: "75–90s", exs: [
+        { n: "Remo Pendlay con barra", d: "MEDIBLE. S1: 62–65kg. Barra toca suelo entre reps. +2.5–5kg/sem.", s: "4×8", r: "2 min" },
         { n: "Remo mancuerna una mano", d: "S1: 20kg. +2kg/sem. Lleva el codo al techo. Máxima contracción dorsal.", s: "4×10/l" },
-        { n: "Dominadas asistidas (armario)", d: "Mínima ayuda de piernas. Grábate cada semana. Meta agosto: 8 limpias.", s: "4×máx" },
+        { n: "Dominadas asistidas (armario)", d: "Mínima ayuda de piernas. Grábate cada semana. Meta agosto: 8 limpias.", s: "4×máx", r: "2 min" },
         { n: "Curl mancuerna supino", d: "S1: 16kg. +1kg/sem objetivo. Supina la muñeca en la subida.", s: "4×10–12" },
         { n: "Curl martillo", d: "Braquial — grosor del brazo de lado. Fallo última serie.", s: "3×12+f" },
       ]},
-      { t: "Cuello", exs: [
+      { t: "Cuello", rest: "45–60s", exs: [
         { n: "Flexión cuello lateral con disco", d: "Tumbado de lado, disco en sien con toalla. 3 seg excéntrico. Diámetro frontal.", s: "3×12/l" },
         { n: "Shrug barra Z", d: "Máximo arriba, pausa 1 seg. Trapecios — masa del cuello de detrás.", s: "4×15" },
       ]},
@@ -137,22 +137,22 @@ export const DAYS = [
     title: "Legs B — Cuádriceps · Sóleo · Core griego",
     focus: ["Cuáds + Sóleo", "Core 20 min"],
     blocks: [
-      { t: "RFT — activación SNC", rft: true, exs: [
+      { t: "RFT — activación SNC", rft: true, rest: "fluido · sin pausa", exs: [
         { n: "3-Step Drop", d: "Explosión vertical máxima, aterrizaje absorbido. Activa potencia.", s: "3×5" },
         { n: "Hostage Squat", d: "Movilidad de cadera profunda. Talones planos. Mide cada semana.", s: "3×10" },
         { n: "Explosive push-up", d: "Calienta hombros para las flexiones de pino del core.", s: "3×6" },
       ]},
-      { t: "Fuerza pierna", exs: [
-        { n: "Sentadilla goblet", d: "S1: 22kg. +2.5kg/sem. Baja al máximo de rango. Cuádriceps completo.", s: "4×12" },
+      { t: "Fuerza pierna", rest: "90s", exs: [
+        { n: "Sentadilla goblet", d: "S1: 22kg. +2.5kg/sem. Baja al máximo de rango. Cuádriceps completo.", s: "4×12", r: "2 min" },
         { n: "Peso muerto rumano mancuernas", d: "S1: 18kg/mano. +2kg/sem. Siente el estiramiento isquio.", s: "4×10" },
         { n: "Zancada reverse", d: "Paso atrás — más seguro para rodilla. 14–16kg/mano S1. Alterna.", s: "3×12/l" },
       ]},
-      { t: "Gemelo sóleo", exs: [
-        { n: "Elevación gemelo sentado (rodilla doblada)", d: "Disco en el muslo. 3 seg excéntrico. Sóleo = volumen lateral. S1: 10kg.", s: "4×20+d" },
+      { t: "Gemelo sóleo", rest: "45–60s", exs: [
+        { n: "Elevación gemelo sentado (rodilla doblada)", d: "Disco en el muslo. 3 seg excéntrico. Sóleo = volumen lateral. S1: 10kg.", s: "4×20+d", r: "drop set sin pausa al final" },
         { n: "Sentadilla profunda pausa 10 seg", d: "Fondo de la goblet, aguanta 10 seg. Sóleo máximo + abre cadera.", s: "3×10s" },
       ]},
-      { t: "Core griego — 20 min", exs: [
-        { n: "HSPU deficit (libros) o estricto", d: "Según semana. El mejor core overhead que existe.", s: "4×8–10" },
+      { t: "Core griego — 20 min", rest: "45s", exs: [
+        { n: "HSPU deficit (libros) o estricto", d: "Según semana. El mejor core overhead que existe.", s: "4×8–10", r: "90s" },
         { n: "Dragon flag negativo", d: "Sube recto, baja en 4 seg. S1–S3: rodillas dobladas. S4+: piernas rectas.", s: "3×5–8" },
         { n: "Windmill mancuerna", d: "Mancuerna arriba, inclínate al suelo. Oblicuos + cadera. La V-taper.", s: "3×8/l" },
         { n: "L-sit en sillas", d: "S1–S3: rodillas dobladas. S7+: ambas rectas. El abs estético brutal.", s: "3×máx" },
