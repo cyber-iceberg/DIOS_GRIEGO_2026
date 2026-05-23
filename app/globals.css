@@ -39,6 +39,7 @@ html, body {
   position: fixed;
   inset: 0;
   z-index: 0;
+  pointer-events: none;
   background-image:
     linear-gradient(rgba(0,229,160,0.025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,229,160,0.025) 1px, transparent 1px);
@@ -54,6 +55,7 @@ html, body {
   width: 600px;
   height: 400px;
   z-index: 0;
+  pointer-events: none;
   background: radial-gradient(circle, rgba(0,229,160,0.08) 0%, transparent 70%);
   filter: blur(40px);
 }
